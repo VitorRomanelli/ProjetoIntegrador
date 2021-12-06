@@ -10,71 +10,126 @@
         >
           <AppBar />
 
-          <v-row class="ma-0 header-info" align="center">
-            <v-col cols="12" sm="6" class="pl-0">
-              <v-img src="../assets/home.png"></v-img>
+          <v-row class="ma-0 header-info hidden-md-and-down" align="center">
+            <v-col cols="12" sm="8" class="d-flex justify-center">
+              <v-img
+                src="../assets/rede.jpg"
+                contain
+                style="border-radius: 10px"
+              ></v-img>
             </v-col>
-            <v-col class="pl-4" cols="12" sm="6">
+            <v-col class="pl-4" cols="12" sm="4">
               <div class="ml-8 d-flex flex-column justify-center">
                 <strong class="header-title">
-                  We focus on
+                  Cherry: A cereja
                   <br />
-                  ergonomics
+                  do bolo
                 </strong>
                 <br />
                 <br />
                 <strong class="header-subtitle">
-                  Most calendars are designed for teams.
+                  Infraestrutura moderna, segura
                   <br />
-                  slate is designed for freelancers.
+                  e organizada.
                 </strong>
                 <br />
                 <br />
-                <v-btn height="65" class="header-button" max-width="236">
-                  Try For Free
+                <v-btn
+                  href="#content"
+                  height="65"
+                  class="header-button"
+                  max-width="236"
+                >
+                  Veja mais
                 </v-btn>
               </div>
             </v-col>
           </v-row>
+
+          <div
+            class="mt-4 d-flex flex-column align-center justify-center"
+            style="font-size: 35px; color: white"
+          >
+            <v-img
+              class="hidden-lg-and-up"
+              src="../assets/cherrie.png"
+              max-height="58"
+              max-width="58"
+              contain
+            ></v-img>
+            <strong class="hidden-lg-and-up"> Cherry </strong>
+          </div>
         </v-img>
       </v-img>
     </div>
 
-    <v-main class="content text-center">
+    <v-main class="content text-center" id="content">
       <v-container>
-        <strong class="content-label">At your fingertips</strong>
+        <strong class="content-label">Feito para você</strong>
 
         <br />
         <br />
 
-        <span class="content-title">Features</span>
+        <span class="content-title">Recursos</span>
 
         <br />
         <br />
 
         <strong class="content-text">
-          Most calendars are designed for teams.
+          Uma infraestrutura personalizada
           <br />
-          Slate is designed for freelancers
+          para as suas necessidades
         </strong>
 
         <br />
         <br />
 
         <v-row class="ma-0 my-6">
-          <v-col v-for="i in 3" :key="i" cols="12" sm="4">
+          <v-col cols="12" sm="4">
             <div class="d-flex justify-center align-center mb-3">
               <v-avatar class="mr-2" color="#EF2779">
-                <v-icon color="white">mdi-plus</v-icon>
+                <v-icon color="white">
+                  mdi-account-multiple-check-outline
+                </v-icon>
+              </v-avatar>
+              <strong class="content-label"> Personalização </strong>
+            </div>
+
+            <span class="content-light-text">
+              Uma estrutura inteiramente pensada de maneira individual para as
+              necessidades especificas da sua empresa.
+            </span>
+          </v-col>
+
+          <v-col cols="12" sm="4">
+            <div class="d-flex justify-center align-center mb-3">
+              <v-avatar class="mr-2" color="#EF2779">
+                <v-icon color="white">
+                  mdi-account-supervisor-circle-outline
+                </v-icon>
+              </v-avatar>
+              <strong class="content-label"> Transparência </strong>
+            </div>
+
+            <span class="content-light-text">
+              Na cherry você tem um atendimento personalizado focado em te
+              oferecer a melhor experiência.
+            </span>
+          </v-col>
+
+          <v-col cols="12" sm="4">
+            <div class="d-flex justify-center align-center mb-3">
+              <v-avatar class="mr-2" color="#EF2779">
+                <v-icon color="white">mdi-access-point-check</v-icon>
               </v-avatar>
               <strong class="content-label">
-                The best products start with Sketch
+                Profissionais Especializados
               </strong>
             </div>
 
             <span class="content-light-text">
-              Slate helps you see how many more days you need to work to reach
-              your financial goal
+              Nos nossos serviços, seguimos todas as normas de cabeamento
+              estruturado e segurança para assegurar a confiança na sua rede.
             </span>
           </v-col>
         </v-row>
@@ -84,38 +139,31 @@
         <br />
         <br />
 
-        <v-row class="ma-0 my-6">
-          <v-col cols="12" class="text-center">
-            <span class="content-title">Lightning fast prototyping </span>
+        <v-row class="ma-0 my-6" justify="center" id="pitch">
+          <v-col cols="12" class="d-flex flex-column align-center">
+            <span class="content-title">Como funciona o nosso serviço? </span>
 
             <br />
             <br />
 
             <strong class="content-text">
-              Most calendars are designed for teams.
-              <br />
-              Slate is designed for freelancers
+              Um pitch para que você entenda nossa proposta!
             </strong>
 
             <br />
             <br />
             <br />
 
-            <v-btn
-              class="content-button"
-              color="#38A3F1"
-              height="65"
-              max-width="236"
-            >
-              Try For Free
-            </v-btn>
-
-            <br />
-            <br />
-            <br />
-
-            <v-img max-width="900" src="../assets/background.png" contain>
-            </v-img>
+            <div style="width: 100%; max-width: 900px">
+              <iframe
+                width="100%"
+                height="506"
+                src="https://www.youtube.com/embed/LXrIvYGITw8"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
           </v-col>
         </v-row>
 
@@ -126,16 +174,12 @@
 
         <v-row>
           <v-col cols="12" class="text-center">
-            <span class="content-title">Partners</span>
+            <span class="content-title">Equipe</span>
 
             <br />
             <br />
 
-            <strong class="content-text">
-              Most calendars are designed for teams.
-              <br />
-              Slate is designed for freelancers
-            </strong>
+            <strong class="content-text"> Apresentando o nosso time </strong>
           </v-col>
         </v-row>
 
@@ -146,29 +190,117 @@
 
         <v-row>
           <v-col
-            v-for="i in 6"
-            :key="i"
             cols="12"
             sm="4"
             class="d-flex flex-column justify-center align-center"
           >
-            <strong class="partner-title">Client Name</strong>
+            <strong class="partner-title">Vitor Romanelli</strong>
 
             <br />
 
             <v-img
-              src="../assets/vitor.jpg"
-              height="123"
-              max-width="123"
+              src="https://avatars.githubusercontent.com/u/68878604?v=4"
+              height="200"
+              max-width="200"
               style="border-radius: 50%"
             ></v-img>
 
             <br />
+          </v-col>
 
-            <span class="partner-text">
-              Slate helps you see how many more days you need to work to reach
-              your financial goal for the month and year.
-            </span>
+          <v-col
+            cols="12"
+            sm="4"
+            class="d-flex flex-column justify-center align-center"
+          >
+            <strong class="partner-title">Vitoria Quintão</strong>
+
+            <br />
+
+            <v-img
+              src="../assets/vitoria.jpeg"
+              height="200"
+              max-width="200"
+              style="border-radius: 50%"
+            ></v-img>
+
+            <br />
+          </v-col>
+
+          <v-col
+            cols="12"
+            sm="4"
+            class="d-flex flex-column justify-center align-center"
+          >
+            <strong class="partner-title">Moises Santana</strong>
+
+            <br />
+
+            <v-img
+              src="../assets/moises.jpg"
+              height="200"
+              max-width="200"
+              style="border-radius: 50%"
+            ></v-img>
+
+            <br />
+          </v-col>
+
+          <v-col
+            cols="12"
+            sm="4"
+            class="d-flex flex-column justify-center align-center"
+          >
+            <strong class="partner-title">Bernardo Morada</strong>
+
+            <br />
+
+            <v-img
+              src="../assets/bernardo.jpeg"
+              height="200"
+              max-width="200"
+              style="border-radius: 50%"
+            ></v-img>
+
+            <br />
+          </v-col>
+
+          <v-col
+            cols="12"
+            sm="4"
+            class="d-flex flex-column justify-center align-center"
+          >
+            <strong class="partner-title">Paulo Junior</strong>
+
+            <br />
+
+            <v-img
+              src="../assets/junior.jpeg"
+              height="200"
+              max-width="200"
+              style="border-radius: 50%"
+            ></v-img>
+
+            <br />
+          </v-col>
+
+          <v-col
+            cols="12"
+            sm="4"
+            class="d-flex flex-column justify-center align-center"
+          >
+            <strong class="partner-title">Mirella Barros</strong>
+
+            <br />
+
+            <v-img
+              src="../assets/mirella.jpeg"
+              height="200"
+              max-width="200"
+              style="border-radius: 50%"
+            ></v-img>
+
+            <br />
           </v-col>
         </v-row>
 
@@ -177,94 +309,52 @@
         <br />
         <br />
 
-        <v-row>
+        <v-row id="prices">
           <v-col cols="12" class="text-center">
-            <span class="content-title">Pricing</span>
+            <span class="content-title">Preços</span>
 
             <br />
             <br />
 
             <strong class="content-text">
-              Most calendars are designed for teams.
+              Entre em contato com nossa equipe.
               <br />
-              Slate is designed for freelancers
+              Faça seu orçamento de forma gratuita e veja a melhor forma de
+              contratar nossos serviços.
             </strong>
           </v-col>
         </v-row>
 
-        <br />
-        <br />
         <br />
         <br />
 
         <v-row class="ma-0">
           <v-col
-            v-for="i in 2"
-            :key="i"
             cols="12"
-            sm="4"
+            sm="12"
             class="d-flex flex-column justify-center align-center"
           >
             <v-card
               height="100%"
-              width="100%"
-              class="pa-6"
-              style="border-radius: 10px"
-              color="white"
-              elevation="0"
-            >
-              <strong class="price-title">Free</strong>
-              <br />
-              <span class="price-subtitle"
-                >Organize across all apps by hand</span
-              >
-
-              <div class="d-flex align-center my-4">
-                <strong class="price">0</strong>
-                <div>
-                  <strong>$</strong>
-                  <br />
-                  <strong>Per Month</strong>
-                </div>
-              </div>
-
-              <v-btn
-                elevation="0"
-                color="#38A3F1"
-                class="price-button"
-                height="52"
-                max-width="255"
-                block
-              >
-                Order Now
-              </v-btn>
-            </v-card>
-          </v-col>
-
-          <v-col
-            cols="12"
-            sm="4"
-            class="d-flex flex-column justify-center align-center"
-          >
-            <v-card
-              height="100%"
-              width="100%"
+              width="70%"
               class="pa-6 selected-price"
               style="border-radius: 10px"
               elevation="0"
             >
-              <strong class="price-selected-title">Free</strong>
+              <strong class="price-selected-title">Entre em contato</strong>
               <br />
               <span class="price-selected-subtitle">
-                Organize across all apps by hand
+                Nossos serviços são orçados de forma individual para cada
+                cliente, entre em contato para marcar uma visita e fazer seu
+                orçamento conosco.
               </span>
 
-              <div class="d-flex align-center my-4">
-                <strong class="price-selected">99</strong>
+              <div class="d-flex justify-center text-start align-center my-4">
+                <strong class="price-selected mr-2">0</strong>
                 <div>
-                  <strong style="color: white">$</strong>
+                  <strong style="color: white">R$</strong>
                   <br />
-                  <strong style="color: white">Per Month</strong>
+                  <strong style="color: white">Orçamento gratuito</strong>
                 </div>
               </div>
 
@@ -275,8 +365,9 @@
                 height="52"
                 max-width="255"
                 block
+                href="#contact"
               >
-                Order Now
+                Contate-nos
               </v-btn>
             </v-card>
           </v-col>
@@ -288,45 +379,49 @@
         <br />
 
         <v-row
+          id="contact"
           class="ma-0 pa-4 contact"
           align="center"
           style="border-radius: 15px"
         >
           <v-col cols="12" class="text-center pa-6">
-            <span class="content-contact-title">Contact Us</span>
+            <span class="content-contact-title">Contato</span>
 
             <br />
             <br />
 
             <strong class="content-contact-text">
-              Most calendars are designed for teams.
+              Envie uma mensagem que um especialista cherry retornará o contato.
               <br />
-              Slate is designed for freelancers
+              Obrigado pelo interesse
             </strong>
           </v-col>
 
           <v-col class="d-flex justify-end" cols="12" sm="6">
             <v-card max-width="430" class="pa-8 contact-card">
-              <v-card-title class="text-center">Contact Us</v-card-title>
+              <v-card-title class="text-center">Contate-nos</v-card-title>
 
               <v-text-field
                 class="my-2"
                 background-color="#F5F5F5"
                 hide-details
                 outlined
-                placeholder="Your Name"
+                placeholder="Seu nome"
+                v-model="clientName"
                 style="border-radius: 39px"
               ></v-text-field>
+
               <v-text-field
                 class="my-2"
                 background-color="#F5F5F5"
                 hide-details
                 outlined
-                placeholder="Your Email"
+                placeholder="Seu e-mail"
                 style="border-radius: 39px"
               ></v-text-field>
+
               <v-textarea
-                placeholder="Your message"
+                placeholder="Sua mensagem"
                 class="my-2"
                 outlined
                 background-color="#F5F5F5"
@@ -338,8 +433,10 @@
                 height="35"
                 color="#EF2779"
                 max-width="100"
-                >Send</v-btn
+                @click="contact"
               >
+                Enviar
+              </v-btn>
             </v-card>
           </v-col>
 
@@ -350,9 +447,9 @@
                   mdi-map-marker-outline
                 </v-icon>
                 <strong>
-                  6386 Spring St undefined Anchorage,
+                  Alto da Serra,
                   <br />
-                  Georgia 12473 United States
+                  Petrópolis 25580-600 Brasil
                 </strong>
               </div>
 
@@ -360,18 +457,18 @@
                 <v-icon large class="mr-2" color="#EF2779">
                   mdi-cellphone
                 </v-icon>
-                <strong> (843) 555-0130 </strong>
-              </div>
-
-              <div class="d-flex align-center my-4">
-                <v-icon large class="mr-2" color="#EF2779">mdi-email</v-icon>
-                <strong> willie.jennings@example.com </strong>
+                <strong> (024) 98374-7428 </strong>
               </div>
 
               <div class="d-flex">
                 <v-icon class="mx-4" large color="#EF2779">mdi-twitter</v-icon>
                 <v-icon class="mx-4" large color="#EF2779">mdi-facebook</v-icon>
                 <v-icon class="mx-4" large color="#EF2779">mdi-linkedin</v-icon>
+              </div>
+
+              <div class="d-flex flex-column align-center my-6">
+                <v-icon large class="mr-2" color="#EF2779">mdi-email</v-icon>
+                <strong> cherry-contact@mail.com </strong>
               </div>
             </div>
           </v-col>
@@ -468,7 +565,7 @@
 
 .partner-title {
   font-weight: bold;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 18px;
   letter-spacing: 0.1px;
   color: #ffffff;
@@ -529,7 +626,6 @@
 .price-selected-subtitle {
   font-weight: bold;
   font-size: 12px;
-  line-height: 18px;
   letter-spacing: 0.1px;
   color: #fff;
 }
@@ -600,6 +696,12 @@
   box-shadow: 0px 8.49823px 12.4205px rgba(0, 0, 0, 0.07) !important;
   border-radius: 20px !important;
 }
+@media (max-width: 700px) {
+  .content-title {
+    font-size: 30px;
+    line-height: unset;
+  }
+}
 </style>
 
 <script>
@@ -612,6 +714,20 @@ export default {
   components: {
     AppBar,
     Footer,
+  },
+
+  data: () => ({
+    clientName: "",
+  }),
+
+  methods: {
+    contact() {
+      if (this.clientName != null && this.clientName != "") {
+        this.$toast.success(
+          `Obrigado por entrar em contato ${this.clientName}!`
+        );
+      }
+    },
   },
 };
 </script>

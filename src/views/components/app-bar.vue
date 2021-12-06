@@ -1,34 +1,31 @@
 <template>
-  <v-app-bar height="156" class="bar elevation-0">
+  <v-app-bar height="156" class="bar elevation-0 hidden-md-and-down">
     <div class="pl-4">
       <v-img
-        src="../../assets/cherries.png"
+        src="../../assets/cherrie.png"
         max-height="58"
         max-width="58"
+        contain
       ></v-img>
     </div>
 
     <v-spacer></v-spacer>
 
     <div class="d-flex justify-space-around align-center">
-      <span class="mx-4 label">Home</span>
-      <span class="mx-4 label">Product</span>
-      <span class="mx-4 label">Pricing</span>
-      <span class="mx-4 label">About</span>
-      <span class="mx-4 label">Contact</span>
-      <v-text-field
-        outlined
-        hide-details
-        background-color="white"
-        style="border-radius: 20px"
-        placeholder="Your Email"
-        color="#EF2779"
-        height="54"
-        class="mx-4"
-      >
-      </v-text-field>
-      <v-btn height="54" class="app-button mx-4" color="white">
-        Subscribe
+      <v-btn style="text-transform: none" text href="#content">
+        <span class="label">Inicio</span>
+      </v-btn>
+      <v-btn style="text-transform: none" text href="#content">
+        <span class="label">Serviço</span>
+      </v-btn>
+      <v-btn style="text-transform: none" text href="#prices">
+        <span class="label">Preços</span>
+      </v-btn>
+      <v-btn style="text-transform: none" text href="#pitch">
+        <span class="label">Sobre nós</span>
+      </v-btn>
+      <v-btn style="text-transform: none" text href="#contact">
+        <span class="label">Contato</span>
       </v-btn>
     </div>
   </v-app-bar>
