@@ -302,6 +302,44 @@
 
             <br />
           </v-col>
+
+          <v-col
+            cols="12"
+            sm="4"
+            class="d-flex flex-column justify-center align-center"
+          >
+            <strong class="partner-title">David Alves</strong>
+
+            <br />
+
+            <v-img
+              src="../assets/davi.jpeg"
+              height="200"
+              max-width="200"
+              style="border-radius: 50%"
+            ></v-img>
+
+            <br />
+          </v-col>
+
+          <v-col
+            cols="12"
+            sm="4"
+            class="d-flex flex-column justify-center align-center"
+          >
+            <strong class="partner-title">Carlos Eduardo Vidal</strong>
+
+            <br />
+
+            <v-img
+              src="../assets/cadu.jpg"
+              height="200"
+              max-width="200"
+              style="border-radius: 50%"
+            ></v-img>
+
+            <br />
+          </v-col>
         </v-row>
 
         <br />
